@@ -1,0 +1,12 @@
+.mainField {
+  display: flex;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-transform: uppercase;
+  gap: 1em;
+}
+
+.letter {
+  border-bottom: .1em solid black;
+}

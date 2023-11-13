@@ -1,0 +1,93 @@
+.hangmanBlock {
+  position: relative;
+  width: 100%;
+}
+
+.bottomHorizontalLine {
+  height: 10px;
+  width: 30%;
+  background-color: black;
+  margin-left: 30%;
+}
+
+.mainVerticalLine {
+  height: 40vh;
+  width: 10px;
+  background-color: black;
+  margin-left: 45%;
+}
+
+.topHorizontalLine {
+  height: 10px;
+  width: 25%;
+  background-color: black;
+  margin-left: 45%;
+}
+
+.rope {
+  position: absolute;
+  width: 10px;
+  height: 5vh;
+  background-color: black;
+  margin-left: 70%;
+}
+
+.head {
+  position: absolute;
+  width: 5%;
+  height: 5vh;
+  border-radius: 100%;
+  border: 10px solid black;
+  top: 5vh;
+  left: 67%
+}
+
+.body {
+  position: absolute;
+  width: 10px;
+  height: 15vh;
+  top: 11vh;
+  left: 70%;
+  background-color: black;
+}
+
+.rightHand {
+  position: absolute;
+  width: 10px;
+  height: 9vh;
+  top: 11vh;
+  left: 72.5%;
+  background-color: black;
+  rotate: 40deg;
+}
+
+.leftHand {
+  position: absolute;
+  width: 10px;
+  height: 9vh;
+  top: 11vh;
+  left: 67.5%;
+  background-color: black;
+  rotate: 140deg;
+
+}
+
+.rightLeg {
+  position: absolute;
+  width: 10px;
+  height: 9vh;
+  top: 25vh;
+  left: 72.5%;
+  background-color: black;
+  rotate: 140deg;
+}
+
+.leftLeg {
+  position: absolute;
+  width: 10px;
+  height: 9vh;
+  top: 25vh;
+  left: 67.5%;
+  background-color: black;
+  rotate: 40deg;
+}
