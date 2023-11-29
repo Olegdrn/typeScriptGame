@@ -72,10 +72,10 @@ function App() {
   return (
     <div className="App">
       <header>
-        {isWinner && "Victory! - Try again"}
+        {isWinner && "Victory! - try again"}
         <br />
         {isWinner && "press Enter"}
-        {isLoser && "Game over! - Try again"}
+        {isLoser && "GAME OVER - try again"}
         <br />
         {isLoser && "press Enter"}
       </header>
