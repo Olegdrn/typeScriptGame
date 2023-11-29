@@ -4,9 +4,22 @@
   font-weight: bold;
   font-family: monospace;
   text-transform: uppercase;
-  gap: 1em;
+  gap: 3vw;
+  align-items: center;
 }
 
 .letter {
   border-bottom: .1em solid black;
+  width: 4vw;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (max-width:700px) {
+
+  .mainField {
+    font-size: 3rem;
+  }
 }

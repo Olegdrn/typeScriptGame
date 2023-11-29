@@ -1,13 +1,27 @@
 import '../style/MainField.css';
-export function MainField() {
-  const word: string = "test";
-  const guessedLetters: string[] = ['t', 'g']
+
+
+type MainFieldProps = {
+  guessedLetters: string[];
+  wordToGuess: string;
+  reveal?: boolean;
+}
+
+export function MainField({ wordToGuess, guessedLetters, reveal = false }: MainFieldProps) {
 
   return (
     <div className="mainField">
-      {word.split("").map((letter, index) => (
-        <span className='letter' key={index}>{letter}
-          <span className={guessedLetters.includes(letter) ? 'visible' : 'hidden'}>
+      {wordToGuess.split("").map((letter, index) => (
+        <span className='letter' key={index}>
+          <span
+            className={guessedLetters.includes(letter) || reveal
+              ? 'visible'
+              : 'hidden'}
+            style={{
+              color:
+                !guessedLetters.includes(letter) && reveal ? "red" : "black"
+            }}
+          >{letter}
           </span>
         </span>
       )
@@ -17,3 +31,14 @@ export function MainField() {
   )
 
 }
+
+
+
+
+
+// style={{
+//   visibility:
+//     guessedLetters.includes(letter) || reveal ? 'visible' : 'hidden',
+//   color:
+//     !guessedLetters.includes(letter) && reveal ? "red" : "black"
+// }}
